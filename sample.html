@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<style>
+body {
+  margin:0px;
+}
+
+#main {
+  display:flex;
+}
+
+#legend {
+  width:300px;
+  height:600px;
+}
+
+.assmt {
+  display:flex;
+  margin:10px 10px 8px 0;
+  font-weight:bold;
+}
+
+.assmt_lbl {
+  margin-right:5px;
+}
+
+.factor {
+  display:flex;
+  padding:5px 5px 10px 10px;
+}
+.factor_lbl {
+  width:180px;
+  flex-grow:1;
+}
+.factor_val {
+  flex-grow:2;
+}
+
+.box {
+  width:20px;
+  margin-right:15px;
+  border: solid 1px silver;
+}
+</style>
+<script type="module" src="sample.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+  <div id="main">
+    <canvas id="canvas" width=700 height=700 ></canvas>
+    <div id="legend">
+      <div class="assmt">
+        <div class="assmt_lbl">Assessment:</div>
+        <div class="assmt_val" id="ttlScore">0</div>
+      </div>
+      </div>
+    </div>
+   </div>
+</body>
+</html>
